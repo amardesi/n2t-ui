@@ -1,0 +1,84 @@
+// * {
+//   border: 1px solid red;
+// }
+@font-face {
+  font-family: 'KievitWeb';
+  src: url('../fonts/KievitWeb.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/KievitWeb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/KievitWeb.woff') format('woff'); /* Modern Browsers */
+}
+body {
+  font-family: KievitWeb;
+  font-size: 18px;
+}
+.box {
+  border-radius: 5px;
+  background-color: GhostWhite;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px 0px 0px;
+}
+.box-linked {
+  display: table;
+  cursor: pointer;
+}
+.box-row {
+  display: table-row;
+}A
+.box-linked-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+.box-linked-icon {
+  display: table-cell;
+  vertical-align: middle;
+}
+.center-horiz {
+  text-align: center;
+}
+.container-narrowest {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.container-widest {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.ext-link {
+  display: inline-block;
+  margin-right: 24px;
+}
+.ext-link:after {
+  display: inline-block;
+  vertical-align: middle;
+  content: ">";
+}
+.footer {
+  background-color: LightSteelBlue;
+}
+.header-logo-left {
+  margin: 0;
+  color: #00778a;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: right;
+}
+@media (min-width: 32em) {
+  .header-logo-left {
+    font-size: 3.6em;
+  }
+}
+.header-logo-right {
+  margin: 0;
+  color: #000;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+}
+@media (min-width: 32em) {
+  .header-logo-right {
+    font-size: 1.5em;
+  }
+}
