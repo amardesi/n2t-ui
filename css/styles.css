@@ -19,11 +19,13 @@ body {
   margin: 10px 0px 0px;
 }
 .box-linked {
-  cursor: pointer;
+  background-image: url("../images/icon-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 .box-linked-text {
   display: inline-block;
-  max-width: 150px;
+  max-width: 200px;
 }
 .box-linked-icon {
   display: inline-block;
