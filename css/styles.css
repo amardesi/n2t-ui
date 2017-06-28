@@ -1,5 +1,5 @@
 // * {
-//   border: 1px solid red;
+//  border: 1px solid red;
 // }
 @font-face {
   font-family: 'KievitWeb';
@@ -19,19 +19,16 @@ body {
   margin: 10px 0px 0px;
 }
 .box-linked {
-  display: table;
   cursor: pointer;
 }
-.box-row {
-  display: table-row;
-}A
 .box-linked-text {
-  display: table-cell;
-  vertical-align: middle;
+  display: inline-block;
+  max-width: 150px;
 }
 .box-linked-icon {
-  display: table-cell;
-  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  top: 50%;
 }
 .center-horiz {
   text-align: center;
