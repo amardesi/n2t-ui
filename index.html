@@ -15,7 +15,7 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  <link rel="stylesheet" href="css/flexboxgrid-6.3.1-min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
@@ -23,7 +23,7 @@
 <body>
 
 
-  <!-- Primary Page Layout
+  <!-- Primary Page Content
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="row center-xs">
   <div class="col-xs-7 col-sm-4">
@@ -68,17 +68,17 @@
 <div class="container-widest">
   <div class="row around-xs middle-xs">
     <div class="col-xs-6 col-sm-4 center-horiz">
-      <button type="button" class="box box-linked" aria-pressed="false" onclick="btnHref('http://www.google.com')" aria-label="More about Archival Resource Key Identifiers (ARKs)">
+      <button type="button" class="box box-linked" aria-pressed="false" onclick="btnHref('https://confluence.ucop.edu/display/Curation/ARK')" aria-label="More about Archival Resource Key Identifiers (ARKs)">
         <span class="box-linked-text">More about Archival Resource Key Identifiers (ARKs)</span>
       </button>
     </div>
     <div class="col-xs-6 col-sm-4 center-horiz">
-      <button type="button" class="box box-linked" aria-pressed="false" onclick="btnHref('http://www.google.com')" aria-label="ARKS Forum">
+      <button type="button" class="box box-linked" aria-pressed="false" onclick="btnHref('https://groups.google.com/forum/?hl=en#!forum/arks-forum')" aria-label="ARKS Forum">
         <span class="box-linked-text">ARKS Forum</span>
       </button>
     </div>
     <div class="col-xs-6 col-sm-4 center-horiz">
-      <button type="button" class="box box-linked" aria-pressed="false" onclick="btnHref('http://www.google.com')" aria-label="Register your organization's interest in assigning ARK identifiers">
+      <button type="button" class="box box-linked" aria-pressed="false" onclick="btnHref('https://goo.gl/forms/bmckLSPpbzpZ5dix1')" aria-label="Register your organization's interest in assigning ARK identifiers">
         <span class="box-linked-text">Register your organization's interest in assigning ARK identifiers</span>
       </button>
     </div>
@@ -93,17 +93,21 @@
   </div>
   <div class="row center-xs">
     <div class="col-xs-6 col-sm-4 center-horiz">
-      <button type="button" class="box box-linked" aria-pressed="false" onclick="btnHref('http://www.google.com')" aria-label="Request an Identifier Prefix">
+      <button type="button" class="box box-linked" aria-pressed="false" onclick="btnHref('http://www.n2t.net/e/prefix_request')" aria-label="Request an Identifier Prefix">
         <span class="box-linked-text">Request an Identifier Prefix</span>
       </button>
     </div>
   </div>
 </div>
+
+  <!-- Spacer 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="row center-xs">
-  &nbsp;<br/>
-  &nbsp;<br/>
+  &nbsp;<br/>&nbsp;<br/>
 </div>
 
+  <!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="row footer">
   <div class="col-xs-12 container-widest">
     <div class="row">
@@ -126,11 +130,14 @@
   </div>
 </div>
 
+  <!-- Function for button links 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript">
     function btnHref(url) {
       window.location = url;
     };
   </script>
+
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
