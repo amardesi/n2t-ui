@@ -18,9 +18,11 @@ a,a:visited, a:active a:hover {
 a:hover {
   color: #00778a; 
 }
+h2 {
+  color: #4F6D7A;
+}
 .box {
   border-radius: 5px;
-  background-color: #f8f8ff;  // #f0f8ff
   border: 1px solid black;
   padding: 20px;
   margin: 10px 0px 0px;
@@ -28,6 +30,7 @@ a:hover {
 }
 .box-big-text {
   font-size: 18px;
+  background-color: #f8f8ff;  // #f0f8ff
   border: 1px solid black;
 }
 @media (min-width: 32em) {
@@ -40,7 +43,7 @@ a:hover {
   width: 100%;
   font-size: inherit;
   font-family: inherit;
-  background-color:  #f0f8ff;  // #94c2d1;
+  background-color:  #C0D6DF;  // #94c2d1;
   background-image: url("../images/icon-arrow-right.svg");
   background-repeat: no-repeat;
   background-position: right center;
@@ -81,7 +84,8 @@ a:hover {
   content: ">";
 }
 .footer {
-  background-color: #b0c4de;  // LightSteelBlue
+  background-color: #b0c4de; /* LightSteelBlue */
+  min-height: 6.8em;
 }
 .header-logo-left {
   margin: 0;
@@ -99,13 +103,16 @@ a:hover {
 .header-logo-right {
   margin: 0;
   color: #000;
-  font-size: 1em;
+  font-size: 0.75em;
   font-weight: 700;
   text-transform: uppercase;
   text-align: left;
 }
 @media (min-width: 32em) {
   .header-logo-right {
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
+}
+.text-sm {
+  font-size: 0.8em;
 }
