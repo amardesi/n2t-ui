@@ -16,21 +16,19 @@ a,a:visited, a:active a:hover {
   text-decoration: underline;
 }
 a:hover {
-  color: #00778a; 
+  color: #505050; 
 }
-h2 {
-  color: #4F6D7A;
+.bg-grey {
+  background-color: #f8f8ff;  // #f0f8ff
 }
 .box {
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid #808080;
   padding: 20px;
   margin: 10px 0px 0px;
-  // box-shadow: 2px 2px 2px #888888;
 }
 .box-big-text {
   font-size: 18px;
-  background-color: #f8f8ff;  // #f0f8ff
   border: 1px solid black;
 }
 @media (min-width: 32em) {
@@ -44,24 +42,20 @@ h2 {
   font-size: inherit;
   font-family: inherit;
   background-color:  #C0D6DF;  // #94c2d1;
-  background-image: url("../images/icon-arrow-right.svg");
+  background-image: url("../images/ext-link.png");
   background-repeat: no-repeat;
   background-position: right center;
 }
-.box-linked:hover { 
+.box-linked:hover, .box-linked:focus { 
   background-color: #b0c4de;
 }
 .box-linked:focus { 
-  background-color: #00778a;
+  outline: none;
+  border: 1px solid #505050;
 }
 .box-linked-text {
   display: inline-block;
   max-width: 200px;
-}
-.box-linked-icon {
-  display: inline-block;
-  position: relative;
-  top: 50%;
 }
 .center-horiz {
   text-align: center;
@@ -84,7 +78,7 @@ h2 {
   content: ">";
 }
 .footer {
-  background-color: #b0c4de; /* LightSteelBlue */
+  background-color: #C0D6DF; 
   min-height: 6.8em;
 }
 .header-logo-left {
@@ -112,6 +106,10 @@ h2 {
   .header-logo-right {
     font-size: 1.1em;
   }
+}
+.header2 {
+  font-size: 1.1em;
+  font-weight: 700;
 }
 .text-sm {
   font-size: 0.8em;
