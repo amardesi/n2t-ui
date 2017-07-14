@@ -51,7 +51,7 @@ h2 {
   border-radius: 5px;
   /* Background Color on un-linked boxes */
   background-color: #FFFFFF;
-  padding: 2px;
+  padding: 0px 10px;
   margin: 10px 0px 0px;
   height: 6.5em;
   display: flex;
