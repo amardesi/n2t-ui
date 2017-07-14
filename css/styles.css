@@ -18,9 +18,9 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-a,a:visited, a:active a:hover {
-  color: #4682b4; 
-  text-decoration: underline;
+a,a:visited, a:active {
+  color: #00778a;
+  text-decoration: none;
 }
 a:hover {
   color: #505050; 
@@ -55,7 +55,7 @@ h2 {
   background-position: right center;
 }
 .box-linked:hover, .box-linked:focus { 
-  background-color: #b0c4de;
+  background-color: #FFC857;
 }
 .box-linked:focus { 
   outline: none;
