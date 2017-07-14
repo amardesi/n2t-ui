@@ -61,11 +61,13 @@ h2 {
 
 /* Linked boxes */
 .box-linked {
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5.8em;
+  height: 6.3em;
   width: 100%;
+  padding: 0px 26px 0px 8px;
   font-size: inherit;
   font-family: inherit;
   /* Background Color on linked boxes */
