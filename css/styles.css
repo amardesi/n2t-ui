@@ -1,6 +1,6 @@
 // * {
 //  border: 1px solid red;
-// }
+//  }
 @font-face {
   font-family: 'KievitWeb';
   src: url('../fonts/KievitWeb.eot'); /* IE9 Compat Modes */
@@ -11,6 +11,13 @@ body {
   font-family: KievitWeb;
   font-size: 18px;
 }
+html { 
+  background: url(../images/UCSD_day2-79_1920x1129.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 a,a:visited, a:active a:hover {
   color: #4682b4; 
   text-decoration: underline;
@@ -18,23 +25,24 @@ a,a:visited, a:active a:hover {
 a:hover {
   color: #505050; 
 }
-.bg-grey {
-  background-color: #f8f8ff;  // #f0f8ff
+h2 {
+  margin: 10px 0px;
 }
 .box {
   border-radius: 5px;
-  border: 1px solid #808080;
+  background-color: #FFFFFF; // Grey: #D8D8D8;  // #f0f8ff
+  // border: 1px solid #808080;
   padding: 20px;
   margin: 10px 0px 0px;
 }
 .box-big-text {
   font-size: 18px;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 @media (min-width: 32em) {
   .box-big-text {
     font-size: 20px;
-    border: 1px solid black;
+    // border: 1px solid black;
   }
 }
 .box-linked {
