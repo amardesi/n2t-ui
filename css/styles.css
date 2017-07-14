@@ -1,3 +1,4 @@
+/* Uncomment these 3 lines to see borders around everything */
 // * {
 //  border: 1px solid red;
 //  }
@@ -12,11 +13,13 @@ body {
   font-size: 18px;
 }
 html { 
-  background: url(../images/UCSD_day2-79_1920x1129.jpg) no-repeat center center fixed; 
+  /* Big Background Image */
+   background: url(../images/UCSD_day2-79_1920x1129.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  /* End CSS for Big Background Image */
 }
 a,a:visited, a:active {
   color: #00778a;
@@ -28,28 +31,31 @@ a:hover {
 h2 {
   margin: 10px 0px;
 }
+
 .box {
   border-radius: 5px;
-  background-color: #FFFFFF; // Grey: #D8D8D8;  // #f0f8ff
-  // border: 1px solid #808080;
+  /* Background Color on un-linked boxes */
+  background-color: #FFFFFF;
   padding: 20px;
   margin: 10px 0px 0px;
 }
 .box-big-text {
   font-size: 18px;
-  // border: 1px solid black;
 }
 @media (min-width: 32em) {
   .box-big-text {
     font-size: 20px;
-    // border: 1px solid black;
   }
 }
+
+/* Un-linked boxes */
 .box-linked {
   width: 100%;
   font-size: inherit;
   font-family: inherit;
-  background-color:  #C0D6DF;  // #94c2d1;
+  /* Background Color on un-linked boxes */
+  background-color:  #C0D6DF;
+  /* External Link Image */
   background-image: url("../images/ext-link.png");
   background-repeat: no-repeat;
   background-position: right center;
@@ -64,6 +70,9 @@ h2 {
 .box-linked-text {
   display: inline-block;
   max-width: 200px;
+}
+.box-set-height {
+  height: 5em;
 }
 .center-horiz {
   text-align: center;
