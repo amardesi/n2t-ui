@@ -26,7 +26,7 @@ a,a:visited, a:active {
   text-decoration: none;
 }
 a:hover {
-  color: #505050; 
+  color: #FFC857;
 }
 h2 {
   margin: 10px 0px;
@@ -76,7 +76,9 @@ h2 {
   background-position: right center;
 }
 @media (min-width: 32em) {
-  height: 4.5em;
+  .box-linked {
+    height: 4.5em;
+  }
 }
 .box-linked:hover, .box-linked:focus { 
   background-color: #FFC857;
