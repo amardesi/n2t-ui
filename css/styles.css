@@ -14,7 +14,7 @@ body {
 }
 html { 
   /* Big Background Image */
-   background: url(../images/UCSD_day2-79_1920x1129.jpg) no-repeat center center fixed; 
+   background: url(../images/shore.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -23,7 +23,7 @@ html {
 }
 a,a:visited, a:active {
   color: #00778a;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover {
   color: #FFC857;
@@ -67,13 +67,11 @@ h2 {
   align-items: center;
   height: 6.3em;
   width: 100%;
-  padding: 0px 26px 0px 8px;
   font-size: inherit;
   font-family: inherit;
+  text-decoration: underline;
   /* Background Color on linked boxes */
   background-color:  #C0D6DF;
-  /* External Link Image */
-  background-image: url("../images/ext-link.png");
   background-repeat: no-repeat;
   background-position: right center;
 }
@@ -115,7 +113,7 @@ h2 {
 }
 .footer {
   background-color: #C0D6DF; 
-  min-height: 6.8em;
+  min-height: 5em;
 }
 .header {
   margin-top: -8px;
@@ -153,6 +151,8 @@ h2 {
   margin: 0;
   padding: 0;
 }
+.list > li {
+  padding-bottom: 0.2em;
 }
 .text-sm {
   font-size: 0.8em;
