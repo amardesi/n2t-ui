@@ -1,6 +1,6 @@
 /* Uncomment these 3 lines to see borders around everything */
 // * {
-//  border: 1px solid red;
+// border: 1px solid red;
 // }
 @font-face {
   font-family: 'KievitWeb';
@@ -11,15 +11,6 @@
 body {
   font-family: KievitWeb;
   font-size: 18px;
-}
-html { 
-  /* Big Background Image */
-   background: url(../images/shore.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  /* End CSS for Big Background Image */
 }
 a,a:visited, a:active {
   color: #00778a;
@@ -32,6 +23,16 @@ h2 {
   margin: 10px 0px;
 }
 
+.background-home { 
+  /* Big Background Image */
+   background: url(../images/shore.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* End CSS for Big Background Image */
+}
+
 .box {
   border-radius: 5px;
   /* Background Color on un-linked boxes */
@@ -39,6 +40,7 @@ h2 {
   padding: 20px;
   margin: 10px 0px 0px;
 }
+
 .box-big-text {
   font-size: 18px;
 }
@@ -47,6 +49,7 @@ h2 {
     font-size: 20px;
   }
 }
+
 .box-fixed {
   border-radius: 5px;
   /* Background Color on un-linked boxes */
@@ -91,8 +94,34 @@ h2 {
   display: inline-block;
   max-width: 200px;
 }
+
+.breadcrumb ul {
+  padding: 10px 0 8px 0;
+  margin: 0;
+}
+.breadcrumb ul > li {
+  list-style: none;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.breadcrumb ul > li:after {
+  padding-left: 1.5em;
+  background: url('../images/icon_angle-right-black.svg') no-repeat center / contain;
+  content: '';
+}
+.breadcrumb ul > li:last-child:after {
+  background: none;
+}
+.breadcrumb--active {
+  font-weight: bold;
+}
+
 .center-horiz {
   text-align: center;
+}
+.container-breadcrumb {
+  margin: 0 -8px 10px -8px;
+  background-color: #C0D6DF; 
 }
 .container-narrowest {
   margin: 0 auto;
@@ -117,7 +146,7 @@ h2 {
 }
 .header {
   margin-top: -8px;
-  padding-top: 8px;
+  padding: 8px 0 6px 0;
   background-color: #FFFFFF; 
 }
 .header-logo-left {
@@ -146,6 +175,7 @@ h2 {
   font-size: 1.3em;
   font-weight: 600;
 }
+
 .list {
   list-style-type: none;
   margin: 0;
