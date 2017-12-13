@@ -96,7 +96,7 @@ h2 {
 }
 
 .breadcrumb ul {
-  padding: 10px 0 8px 0;
+  padding: 12px 0 8px 0;
   margin: 0;
 }
 .breadcrumb ul > li {
@@ -121,7 +121,9 @@ h2 {
 }
 .container-breadcrumb {
   margin: 0 -8px 10px -8px;
-  background-color: #C0D6DF; 
+  border-style: double;
+  border-color: #C0D6DF white white white;
+  background-color: #FFFFFF; 
 }
 .container-narrowest {
   margin: 0 auto;
