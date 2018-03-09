@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--#include virtual="prelim.html" -->
+<head>
+  <!--#include virtual="/e/prelim.html" -->
+  <title>About N2T.net</title>
+</head>
 <body>
-<!--#include virtual="header.html" -->
+<!--#include virtual="/e/header.html" -->
 <!--#include virtual="breadcrumb_about.html" -->
-
 <div class="container-narrowest">
-<section>
-  <h1>Heading Level 1 Lorem Ipsum Dolor Sit Amet</h1>
-  <h2>Heading Level 2 Lorem Ipsum Dolor Sit Amet</h2>
-  <h3>Heading Level 3 Lorem Ipsum Dolor Sit Amet</h3>
-  <h4>Heading Level 4 Lorem Ipsum Dolor Sit Amet</h4>
-  <p>Paragraph containing links. Each minter is associated with a shoulder, usually a short string, such as "fk4", that extends an identifier base, such as "99999" (see <a href="https://confluence.ucop.edu/display/DataCite/Identifier+Basics">Identifier Basics</a> and <a href="https://confluence.ucop.edu/display/Curation/Identifier+Conventions">Identifier Conventions</a> for details.</p>
-  <ul>
-    <li>Unordered list</li>
-    <li>Debitis voluptate, corporis velit fugiat nostrum culpa</li>
-    <li>Aperiam natus vero, dolorum facere a consectetur odit eos eaque sit accusamus</li>
-    <li>Et fugiat dolorum dolores quo totam repellat</li>
-  </ul>
-  <img src="http://via.placeholder.com/400x100?text=Responsive+Image"/>
-  <ol>
-    <li>Ordered list
-    </li>
-    <li>Vero reprehenderit eos quasi ut commodi deleniti incidunt alias suscipit quia iure repellendus
-    </li>
-    <li>Omnis iusto impedit unde autem, nostrum quos quaerat rerum voluptate quasi
-    </li>
-    <li>Iusto, sit repellat facilis obcaecati ipsa exercitationem id voluptatibus impedit blanditiis
-    </li>
-  </ol>
-  <blockquote>Blockquote. Magni quo assumenda, voluptatum tempore itaque perspiciatis excepturi earum voluptatibus dolorum placeat nam fugiat inventore praesentium adipisci libero eos, fugit veritatis minima.
-  </blockquote>
-  <p>Bold and italicized text. Cupiditate provident voluptas, <strong>commodi quos eius necessitatibus eveniet</strong> modi architecto quas <em>itaque culpa dolor possimus rem magni laboriosam!</em> Saepe beatae deserunt minus.
-  </p>
-</section>
+<div class="section" id="about-n2t-net">
+<h1>About N2T.net</h1>
+<p>The N2T.net (Name-to-Thing) resolver is a server that specializes in
+keeping public identifiers stable by redirecting web requests to the most
+appropriate locations. N2T stores redirection and descriptive information
+(metadata) for individual identifiers and, when it doesn't know about a
+particular identifier, relies on stored information relevant to the kind
+of identifier it is.</p>
+<p>The primary audience for N2T services is the global community of people
+engaged in reseach, academic, and cultural heritage endeavors. Together
+with our primary partner, <a class="reference external" href="https://ezid.cdlib.org">EZID</a>, we work with national and university
+libraries, academic and society publishers, natural history and art
+museums, as well as companies and funders that support education and
+research. N2T identifiers are used for everything from citing scholarly
+works to referencing tissue samples. They link to cutting edge scientific
+datasets, historic botanists, evolving semantic web term definitions, and
+living people.</p>
+<p>N2T.net is unusual among resolvers because it stores individual
+identifiers of more than one kind, including both <a class="reference external" href="https://confluence.ucop.edu/display/Curation/ARK">ARK</a>s and <a class="reference external" href="https://www.doi.org">DOI</a>s.
+As such it provides equal services to all identifiers, regardless of
+origin. For example, it supports ARK-style inflections for DOIs and
+<a class="reference external" href="https://www.datacite.org">DataCite</a> DOI metadata via content negotiation for ARKs.</p>
+<p>N2T is currently maintained at the <a class="reference external" href="https://www.cdlib.org">California Digital Library</a> (CDL)
+within the University of California (UC) Office of the President. CDL
+supports electronic library services for ten UC campuses and a dozen law
+schools, medical centers, and national labs, as well as hundreds of
+museums, herbaria, botanical gardens, etc.  Recognizing the important
+global role that the resolver plays, we are actively seeking to establish
+broad and sustainable community ownership of N2T's technological,
+administrative, and policy infrastructure.</p>
+<ul class="simple">
+<li><a class="reference external" href="/e/partners.html">N2T Partners</a></li>
+<li><a class="reference external" href="/e/n2t_apidoc.html">N2T API Documentation</a></li>
+<li><a class="reference external" href="/e/n2t_vision.html">Original N2T vision</a></li>
+</ul>
+
 </div>
-
-<!--#include virtual="footer.html" -->
-
+</div>
+</div>
+<!--#include virtual="/e/footer.html" -->
 </body>
 </html>
