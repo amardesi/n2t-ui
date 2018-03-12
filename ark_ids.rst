@@ -125,7 +125,7 @@ or "``https://``") and name of a service that provides support for that ARK.
 That service name, or the "Name Mapping Authority" (NMA), is mutable and
 replaceable, as neither the web server itself nor the current web protocols are
 expected to last longer than the identified objects. The immutable, globally
-unique identifier follows the "ark:" label. This includes a "Name Assigning
+unique identifier follows the "``ark:``" label. This includes a "Name Assigning
 Authority Number" (NAAN) identifying the naming organization, followed by the
 name that it assigns to the object. Please visit the `NAAN request form`_ if you
 are interested in generating and using ARKs for your information objects.
@@ -161,7 +161,7 @@ might become ::
 NAAN: the Name Assigning Authority Number
 =========================================
 
-The NAAN part, following the "ark:" label, uniquely identifies the organization
+The NAAN part, following the "``ark:``" label, uniquely identifies the organization
 that assigned the Name part of the ARK. Often the initial access provider (the
 first NMA) coincides with the original namer (represented by the NAAN),
 however, access may be provided by one or more different entities instead of or
@@ -188,7 +188,7 @@ begin using it immediately to assign ARKs.
 
 In thinking about how to manage the namespace, you may find it helpful to
 consider the usual practice of partitioning it with reserved prefixes of, say
-1-5 characters, eg, names of the form "ark:/NAAN/xt3...." for each
+1-5 characters, eg, names of the form "``ark:/NAAN/xt3....``" for each
 "sub-publisher" in an organization. Opaque prefixes that only have meaning to
 information professionals are often a good idea and have precedent in schemes
 such as ISBN and ISSN. The ARK specification is currently the best guide for
@@ -238,7 +238,7 @@ of connecting to one thing, an ARK should connect to three things:
 
 This is a achieved through the use of "inflections", or different kinds of
 endings. With no ending, the ARK (in a URL) gives you what you expect from a web
-browser. If you add a single '?' to the end, for example, ::
+browser. If you add a single '``?``' to the end, for example, ::
 
  http://texashistory.unt.edu/ark:/67531/metapth346793/?
 
@@ -252,7 +252,7 @@ as ::
  when: 1963
  where: http://texashistory.unt.edu/ark:/67531/metapth346793/
 
-Adding '??' to the end should return a policy statement. It is a side-benefit of
+Adding '``??``' to the end should return a policy statement. It is a side-benefit of
 ARKs that an object's metadata doesn't need an identifier different from that
 for the object, which cuts in half the number of identifiers that need to be
 generated and managed.

@@ -98,7 +98,7 @@ or &quot;<tt class="docutils literal"><span class="pre">https://</span></tt>&quo
 That service name, or the &quot;Name Mapping Authority&quot; (NMA), is mutable and
 replaceable, as neither the web server itself nor the current web protocols are
 expected to last longer than the identified objects. The immutable, globally
-unique identifier follows the &quot;ark:&quot; label. This includes a &quot;Name Assigning
+unique identifier follows the &quot;<tt class="docutils literal">ark:</tt>&quot; label. This includes a &quot;Name Assigning
 Authority Number&quot; (NAAN) identifying the naming organization, followed by the
 name that it assigns to the object. Please visit the <a class="reference external" href="https://goo.gl/forms/bmckLSPpbzpZ5dix1">NAAN request form</a> if you
 are interested in generating and using ARKs for your information objects.</p>
@@ -133,7 +133,7 @@ http://portico.org/ark:/13030/tf5p30086k
 </div>
 <div class="section" id="naan-the-name-assigning-authority-number">
 <h1>NAAN: the Name Assigning Authority Number</h1>
-<p>The NAAN part, following the &quot;ark:&quot; label, uniquely identifies the organization
+<p>The NAAN part, following the &quot;<tt class="docutils literal">ark:</tt>&quot; label, uniquely identifies the organization
 that assigned the Name part of the ARK. Often the initial access provider (the
 first NMA) coincides with the original namer (represented by the NAAN),
 however, access may be provided by one or more different entities instead of or
@@ -155,7 +155,7 @@ nationale de France.</p>
 begin using it immediately to assign ARKs.</p>
 <p>In thinking about how to manage the namespace, you may find it helpful to
 consider the usual practice of partitioning it with reserved prefixes of, say
-1-5 characters, eg, names of the form &quot;ark:/NAAN/xt3....&quot; for each
+1-5 characters, eg, names of the form &quot;<tt class="docutils literal"><span class="pre">ark:/NAAN/xt3....</span></tt>&quot; for each
 &quot;sub-publisher&quot; in an organization. Opaque prefixes that only have meaning to
 information professionals are often a good idea and have precedent in schemes
 such as ISBN and ISSN. The ARK specification is currently the best guide for
@@ -202,7 +202,7 @@ of connecting to one thing, an ARK should connect to three things:</p>
 </ul>
 <p>This is a achieved through the use of &quot;inflections&quot;, or different kinds of
 endings. With no ending, the ARK (in a URL) gives you what you expect from a web
-browser. If you add a single '?' to the end, for example,</p>
+browser. If you add a single '<tt class="docutils literal">?</tt>' to the end, for example,</p>
 <pre class="literal-block">
 http://texashistory.unt.edu/ark:/67531/metapth346793/?
 </pre>
@@ -216,7 +216,7 @@ what: [Photographs of Identification Cards]
 when: 1963
 where: http://texashistory.unt.edu/ark:/67531/metapth346793/
 </pre>
-<p>Adding '??' to the end should return a policy statement. It is a side-benefit of
+<p>Adding '<tt class="docutils literal"><span class="pre">??</span></tt>' to the end should return a policy statement. It is a side-benefit of
 ARKs that an object's metadata doesn't need an identifier different from that
 for the object, which cuts in half the number of identifiers that need to be
 generated and managed.</p>
