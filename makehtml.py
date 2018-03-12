@@ -1,16 +1,15 @@
 #! /usr/bin/env python
 
-# Transforms an API documentation file, written in reStructuredText
-# (http://docutils.sourceforge.net/rst.html), to a Django template.
-# This script is just a thin wrapper around the Docutils rst2html.py
+# Transforms an file written in reStructuredText
+# (http://docutils.sourceforge.net/rst.html), to an HTML file.
+# This script is just a thin wrapper around the Docutils rst2html
 # tool, which is assumed to be in the caller's path.
 #
-# Usage: make-apidoc-html apidoc.{version}.rst
+# Usage: makehtml {filename}.rst
 #
-# Output is written to apidoc.{version}.html.
+# Output is written to {filename}.html.
 #
-# Greg Janee <gjanee@ucop.edu>
-# September 2015
+# adapted from Greg Janee's code (gjanee@ucop.edu, September 2015)
 
 import re
 import subprocess
@@ -21,37 +20,58 @@ def error (message):
   sys.stderr.write("makehtml: %s\n" % message)
   sys.exit(1)
 
-if len(sys.argv) != 2:
-  sys.stderr.write("Usage: makehtml {page_slug}.rst\n")
+if sys.argv[1] == '--date':
+  dopt = '--date'
+  sys.argv.pop(1)
+else:
+  dopt = '--no-datestamp'
+# yyy timestamp not showing up in docs
+
+if len(sys.argv) != 3:
+  sys.stderr.write("Usage: makehtml {page_slug}.rst Title\n")
   sys.exit(1)
 
 infile = sys.argv[1]
+title = sys.argv[2]
 slug = infile[:-4] 
 outfile = slug + ".html"
 
 t = tempfile.NamedTemporaryFile()
-if subprocess.call(["rst2html.py", infile, t.name]) != 0:
-  error("subprocess call failed")
+try:
+  try:					# try the Mac OS way
+    if subprocess.call(["rst2html.py", dopt, infile, t.name]) != 0:
+      error("subprocess call failed")
+  except OSError:			# try the Linux way
+    if subprocess.call(["rst2html", dopt, infile, t.name]) != 0:
+      error("subprocess call failed")
+except:
+  raise
 m = re.search("//BEGIN//</p>\n(.*)<p>//END//", t.read(), re.S)
-if not m: error("error parsing rst2html.py output")
+if not m: error("error parsing rst2html output")
 body = m.group(1)
 t.close()
 
-# Note the hack below: the extra </div> is needed to close the
+# Note the hack below: extra </div>'s are needed to close the
 # preceding section.
 
 f = open(outfile, "w")
 f.write(
 """<!DOCTYPE html>
 <html lang="en">
-<!--#include virtual="prelim.html" -->
+<head>
+  <!--#include virtual="/e/prelim.html" -->
+  <title>%s</title>
+</head>
 <body>
-<!--#include virtual="header.html" -->
+<!--#include virtual="/e/header.html" -->
 <!--#include virtual="breadcrumb_%s.html" -->
-<div class="container-narrowest">%s</div>
-<!--#include virtual="footer.html" -->
+<div class="container-narrowest">
+%s
 </div>
+</div>
+</div>
+<!--#include virtual="/e/footer.html" -->
 </body>
 </html>
-""" % (slug, body))
+""" % (title, slug, body))
 f.close()
