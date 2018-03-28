@@ -23,10 +23,10 @@ for example,</p>
 <p>When an identifier is presented to N2T for resolution, the web server is
 configured to do a database lookup and ask that the target URL bound with the
 identifier be returned in the form of an HTTP redirect.</p>
-<p>The target value (a URL) is metadata stored in a reserved element name, <tt class="docutils literal">_t</tt>,
-and it is considered to be <em>bound under</em> its identifier. Arbitrary name/value
-pairs may be bound under an identifier. Other metadata elements support
-<a class="reference external" href="https://confluence.ucop.edu/display/Curation/ARK">inflections</a> and content negotiation.</p>
+<p>The target value (a URL) is a metadata value stored in a reserved element name,
+<tt class="docutils literal">_t</tt>, and it is considered to be <em>bound under</em> its identifier. Arbitrary
+name/value pairs may be bound under an identifier. Other metadata elements
+support <a class="reference external" href="/e/ark_ids.html">inflections</a> and content negotiation.</p>
 <p>On resolution if a target URL is found, the server redirects the client to it.
 Failing to find a bound identifier, the N2T.net resolver then looks for a
 redirection rule associated with the identifier. It does so by inspecting its
@@ -36,7 +36,16 @@ from the end. For example,</p>
 ark:/12345/fk1234        # original identifier string
 ark:/12345/fk1           # &quot;shoulder&quot;
 ark:/12345               # NAAN (Name Assigning Authority Number)
-ark                      # &quot;scheme&quot; (identifier class, aka, prefix)
+ark:                     # &quot;scheme&quot; (identifier class, aka, prefix)
+</pre>
+<p>While N2T is mostly used to redirect identifiers to objects at external web
+addresses, it can also directly return internal N2T information on certain
+truncated identifier forms. For example (and these are subject to change),</p>
+<pre class="literal-block">
+ark:/99999               # records for ARK NAAN 99999 and its shoulders
+doi:10.5072              # records for DOI Prefix 10.5072 and its shoulders
+pdb:                     # records for scheme PDB and its providers
+*/pdb:2gc4               # all provider redirection targets for pdb:2gc4
 </pre>
 <p>That briefly describes the minimal UI (user interface) that N2T.net has.
 More about how N2T uses identifiers can be found in <a class="reference external" href="https://ezid.cdlib.org/learn/id_basics">Identifier Basics</a>

@@ -8,7 +8,7 @@
 .. |sm| unicode:: U+2120 .. service mark superscript
 
 .. _EZID: https://ezid.cdlib.org
-.. _ARK: https://confluence.ucop.edu/display/Curation/ARK
+.. _ARK: /e/ark_ids.html
 .. _DOI: https://www.doi.org
 .. _EZID.cdlib.org: https://ezid.cdlib.org
 .. _DataCite: https://www.datacite.org
@@ -22,8 +22,8 @@
 .. _Towards Electronic Persistence Using ARK Identifiers: /e/Towards_Electronic_Persistence_Using_ARK_Identifiers.pdf
 .. _ARK and CDL Identifier conventions: http://ezid.cdlib.org/learn/id_concepts
 .. _Archival Resource Key - Wikipedia: http://en.wikipedia.org/wiki/Archival_Resource_Key
-.. _Noid (Nice Opaque Identifiers): https://confluence.ucop.edu/display/Curation/NOID
-.. _Noid: https://confluence.ucop.edu/display/Curation/NOID
+.. _Noid (Nice Opaque Identifiers): /e/noid.html
+.. _Noid: /e/noid.html
 .. _ARK plugin for Omeka: https://github.com/Daniel-KM/ArkAndNoid4Omeka
 .. _EZID service: https://ezid.cdlib.org
 .. _N2T.net resolver: /
@@ -32,8 +32,8 @@
 
 //BEGIN//
 
-ARK
-=============
+Archival Resource Key (ARK) Identifiers
+=======================================
 
 ARKs are URLs designed to support long-term access to information objects.
 In 2001 ARKs were introduced to identify objects of any type:
