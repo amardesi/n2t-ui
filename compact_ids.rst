@@ -55,8 +55,4 @@ our plans to reach out to publishers to encourage adoption of inline citation
 of compact identifiers is described in `Uniform Resolution of Compact
 Identifiers for Biomedical Data`_.
 
-|
-|
-|
-
 //END//

@@ -180,8 +180,4 @@ Other NOID implementations
 - NYU: `Java`_ (beta)
 - PSU: `Ruby`_
 
-|
-|
-|
-
 //END//

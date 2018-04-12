@@ -157,6 +157,7 @@ h2 {
 }
 .content {
   flex: 1 0 auto;
+  margin-bottom: 50px;
 }
 .ext-link {
   display: inline-block;

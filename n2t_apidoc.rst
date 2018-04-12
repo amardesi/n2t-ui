@@ -526,8 +526,4 @@ is in the same form as what is presented to n2t.net:
 
 More generally, the form follows n2t.net/*scheme:[/]naan/string*.
 
-|
-|
-|
-
 //END//
